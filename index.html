@@ -1,0 +1,84 @@
+<html>
+<head>
+<title> Анкета пользователя </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form>
+		<h3> Анкета пользователя</h3>
+		<table>
+			<tr> 
+				<td> Имя: </td>
+				<td> <input class="entry" TYPE = "name" NAME = "name" SIZE = "20"></td>
+				<td> Область: </td>
+				<td><input class="entry" TYPE = "text" NAME = "state" SIZE = "20"></td>
+			</tr>
+
+			<tr> 
+				<td> Фамилия: </td>
+				<td><input class="entry" TYPE = "name" NAME = "name" SIZE = "20"></td></td>
+				<td> Город: </td>
+				<td><input class="entry" TYPE = "text" NAME = "sity" SIZE = "20"></td>
+				
+			</tr>
+
+			<tr>
+				<td> Никнейм </td>
+				<td> <input class="entry" TYPE = "text" NAME = "name" SIZE = "20">
+				<td> Улица: </td>
+				<td><input class="entry" TYPE = "name" NAME = "street1" SIZE = "20"></td>	
+			</tr>
+
+			<tr>
+				<td> Пароль: </td>
+				<td><input class="entry" TYPE = "password" NAME = "name" SIZE = "20"></td>
+				<td> Дом, квартира: </td>
+				<td><input class="entry" TYPE = "text" NAME = "street2" SIZE = "20"></td>
+			</tr>
+
+			<tr>
+				<td> Подтверждение:</td>
+				<td> <input class="entry" TYPE = "password" NAME = "name" SIZE = "20"></td>
+				<td> Индекс: </td>
+				<td><input class="entry" TYPE = "name" NAME = "zip" SIZE = "20"></td>
+			</tr>
+		</table>
+
+		<h4> Укажите свои увлечения</h4>
+		<form name="select_hobby" action="/cgi-bin/hobby.cgi" metod="get">
+			<table>
+				<tr>
+					<td><input class="mycheckbox" type="checkbox" name="hobby" value="computers"></td>
+					<td> Компьютеры</td>
+				</tr>
+				<tr>
+					<td><input class="mycheckbox" type="checkbox" name="hobby" value="art"></td>
+					<td> Литература</td>
+				</tr>
+				<tr>
+					<td><input class="mycheckbox" type="checkbox" name="hobby" value="music"></td>
+					<td> Музыка</td>
+				</tr>
+				<tr>
+					<td><input class="mycheckbox" type="checkbox" name="hobby" value="avto"></td>
+					<td> Автомобили</td>
+				</tr>
+				<tr>
+					<td><input class="mycheckbox" type="checkbox" name="hobby" value="sport"></td>
+					<td> Спорт</td>
+				</tr>
+			</table>
+		</form>
+
+		<a href="index_2.html">Зачетная книжка</a>
+
+		<form>
+			<br> Комментарий:</br>
+			<textarea class="entry"	name="comment"	rows=6	cols=23></textarea>
+		</form>
+
+		<input class="button" type ="submit" value="Отправить">
+		<input class="button" type="reset" value="Очистить">
+	</form>
+</body>
+</html>
