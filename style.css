@@ -4,6 +4,9 @@
 	padding: 10px;
 	line-height: 3.5;
 }
+body{
+	font-family: 'Times New Roman', Times, serif;
+}
 .mycheckbox {
 	display: inline-flex;
 	align-items: center;
